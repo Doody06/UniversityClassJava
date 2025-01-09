@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 public class TestJOptionPane {
     public static void main(String[] args) {
         JOptionPane.showMessageDialog(null,
-                                      "Welcome to Java!",
+                                      "Welcome to Java!\n",
                                       "Display Message",
                                       JOptionPane.INFORMATION_MESSAGE);
     }
