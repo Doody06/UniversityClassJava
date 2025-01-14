@@ -16,3 +16,82 @@ public class Chapter2_exercises {
            
     }
 }
+/*
+class FeetToMeters {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a value for feet: ");
+        double feet = input.nextDouble();
+        double meters = feet*0.305;
+        System.out.println(feet + " feet is " + meters + " meters ");
+    }
+}
+
+class KilogramsToPounds {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number in pounds: ");
+        double pounds = input.nextDouble();
+        double kilograms = pounds*0.454;
+        System.out.print(pounds + "pounds is " + kilograms + " kilograms ");
+        
+    }
+}
+
+class GratuityCalculator {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the subtotal and a gratuity rate ");
+        double subtotal = input.nextDouble();
+        double gratuity_rate = input.nextDouble();
+        double gratuity = subtotal*(gratuity_rate / 100);
+        double total = subtotal + gratuity;
+        System.out.println("The gratuity is $" + gratuity + " and total is $" + total);
+        
+    }
+class SumTheDigitsOfIntegers {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number between 0 and 1000: ");
+        int numInput = input.nextInt();
+        int ones = numInput % 10;
+        numInput = numInput / 10;
+        int tens = numInput % 10;
+        numInput = numInput / 10;
+        int hundreds = numInput % 10;
+        System.out.println("The sum of the digits is " + (ones + tens + hundreds));
+        
+    }
+class YearsInMinutes {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the numbre of minutes: ");
+        long inputMinutes = input.nextInt();
+        long minutesInYear = 365*24*60;
+        long years = inputMinutes / minutesInYear;
+        long days = (inputMinutes % minutesInYear) / (24*60); // find number of minutes left to complete a year then divide that by number of minutes in a day
+        System.out.println(years);
+        System.out.println(days);
+    }  
+    
+}
+    NEED HELP HOW TO LIMIT DECIMAL PLACES TO 2
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter the monthly saving amount: ");
+        double saving = input.nextDouble();
+        
+        final double INTEREST_RATE = 1.00417;
+        
+        double firstMonth = saving * INTEREST_RATE;
+        double secondMonth = (saving + firstMonth) * INTEREST_RATE;
+        double thirdMonth = (saving + secondMonth) * INTEREST_RATE;
+        double fourthMonth = (saving + thirdMonth) * INTEREST_RATE;
+        double fifthMonth = (saving + fourthMonth) * INTEREST_RATE;
+        double sixthMonth = (saving + fifthMonth) * INTEREST_RATE;
+        
+        System.out.println("after the sixth month, the account value is $" + sixthMonth);
+    }
+
+*/ 
