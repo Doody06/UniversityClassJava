@@ -1,6 +1,6 @@
 //last accessed 1/12/2025
 //This program computes the area of a circle using input from the user
-package com.mycompany._chapter2a;
+package pkg224110470_chapter2;
 
 import java.util.Scanner;
 

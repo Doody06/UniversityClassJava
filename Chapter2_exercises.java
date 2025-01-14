@@ -1,18 +1,18 @@
-
-package com.mycompany._chapter2a;
+// last accessed 1/14/2025
+package pkg224110470_chapter2;
 import java.util.Scanner;
 
 public class Chapter2_exercises {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
+        System.out.print("enter the number of total seconds");
+        int totalSeconds = input.nextInt();
+        int minutes = totalSeconds / 60;
+        int seconds = totalSeconds - minutes*60; //with modulus totalSeconds % minutes
         
-        //Ask the user to enter a temperature in Celsius
-        System.out.print("Enter a Celsius temperature:");
-        double celsius = in.nextDouble();
-        
-        //calculate the temperature in fahrenheit
-        double fahrenheit = (9.0 / 5) * celsius + 32;
-        System.out.println(celsius + " in Celsius is " + fahrenheit +" in fahrenheit");
+        System.out.println("the total number of minutes is : "+ minutes);
+        System.out.println("The number of remaining seconds is : "+ seconds);
+           
     }
 }
