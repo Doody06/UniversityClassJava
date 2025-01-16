@@ -17,6 +17,7 @@ public class Chapter2_exercises {
     }
 }
 /*
+2.3
 class FeetToMeters {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -26,7 +27,7 @@ class FeetToMeters {
         System.out.println(feet + " feet is " + meters + " meters ");
     }
 }
-
+2.4
 class KilogramsToPounds {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -37,7 +38,7 @@ class KilogramsToPounds {
         
     }
 }
-
+2.5
 class GratuityCalculator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -49,19 +50,27 @@ class GratuityCalculator {
         System.out.println("The gratuity is $" + gratuity + " and total is $" + total);
         
     }
+    2.6
 class SumTheDigitsOfIntegers {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+          Scanner input = new Scanner(System.in);
+        
         System.out.print("Enter a number between 0 and 1000: ");
         int numInput = input.nextInt();
-        int ones = numInput % 10;
+        
+        int sumDigits = numInput % 10;
         numInput = numInput / 10;
-        int tens = numInput % 10;
+        sumDigits = sumDigits + (numInput % 10);
+        numInput = numInput / 10;  
+        sumDigits = sumDigits + (numInput % 10);
         numInput = numInput / 10;
-        int hundreds = numInput % 10;
-        System.out.println("The sum of the digits is " + (ones + tens + hundreds));
+        sumDigits = sumDigits + (numInput);
+        
+        System.out.println("The sum of the digits is " + sumDigits);
+        
         
     }
+    2.7
 class YearsInMinutes {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -76,6 +85,7 @@ class YearsInMinutes {
     
 }
     NEED HELP HOW TO LIMIT DECIMAL PLACES TO 2
+class CompoundValue
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
