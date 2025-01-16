@@ -103,5 +103,26 @@ class CompoundValue
         
         System.out.println("after the sixth month, the account value is $" + sixthMonth);
     }
-
+public class AreaHexagon {
+        public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
+            System.out.print("Enter the side of a hexagon to compute the area");
+            System.out.println("The area of the hexagon is : " + 
+                    ((3*Math.pow(3,0.5))/2)*Math.pow(input.nextDouble(), 2)); // formula of a hexagon
+    }
+}
+public class WindChillIndex {
+        public static void main(String[] args) {
+            Scanner input = new Scanner(System.in);
+            
+            System.out.println("Enter the temperature in Fahrenheit between -58F and 41F: ");
+            double temperature = input.nextDouble();
+            System.out.print("Enter the wind speed (>=2) in miles per hour: ");
+            double windSpeed = input.nextDouble();
+            
+            System.out.println("The wind chill index is" + 
+                    (35.74 + 0.6215*temperature - 35.75*Math.pow(windSpeed, 0.16) + 
+                            (0.4275*temperature*Math.pow(windSpeed, 0.16)))); //Wind Chill index formula
+        }
+}
 */ 
